@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Auto Home</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="images/icon.png">
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+
+    <div class="main">
+        <!-- Navigation Section -->
+       
+        <div class="maintitle"><p>Prime Auto</p></div>
+           
+            <nav class="nav">
+                <div class="list">
+                    <ul>
+                        <li><a href="#" id="Home">Home</a></li>
+                        <li><a href="pages/buy.html" id="Buy">Buy</a></li>
+                        
+                        <li><a href="pages/parts.html" id="Parts">Parts</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="profile">
+                    
+                        <button onclick="document.getElementById('login-form').style.display='block'">log in</button>
+                   
+                </div>
+            </nav>
+      
+
+            <div id="login-form">
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" onclick="login()" class="toggle-btn">Log&nbsp;In</button>
+                        <button type="button" onclick="register()" class="toggle-btn">Register</button>
+                    </div>
+                    <form id="login" class="input-group-login">
+                        <input type="email" id="loginEmail" class="input-field" placeholder="Email Id" required title="Please enter a valid email address">
+    <input type="password" id="loginPassword" class="input-field" placeholder="Enter Password" required minlength="8" title="Password must be at least 8 characters long">
+                        
+                        <div class="remember">
+                            <input type="checkbox" class="check-box" >
+                            <p>Remember&nbsp;password</p></div>
+                        
+                        <button type="submit" class="submit-btn">Log in</button>
+                    </form>
+                    <form id="register" class="input-group-register" onsubmit="return validateForm()">
+                        <input type="text" class="input-field" placeholder="First Name" required pattern="[A-Za-z\s]+" title="First Name should only contain letters and spaces">
+    <input type="text" class="input-field" placeholder="Last Name" required pattern="[A-Za-z\s]+" title="Last Name should only contain letters and spaces">
+    <input type="email" class="input-field" placeholder="Email Id" required title="Please enter a valid email address">
+    <input type="password" id="password" class="input-field" placeholder="Enter Password" required minlength="8" title="Password must be at least 8 characters long">
+    <input type="password" id="confirmPassword" class="input-field" placeholder="Confirm Password" required minlength="8" title="Please confirm your password">
+                        
+                        <div class="remember">
+                            <input type="checkbox" class="check-box" id="agree">
+                            <span>I&nbsp;agree&nbsp;to&nbsp;the&nbsp;terms&nbsp;and&nbsp;conditions</span></div>
+                       
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        <!-- New Entries Section -->
+        <div class="titles">
+            <p>New Entries</p>
+        </div>
+        <header class="top">
+            <div class="gradiant">
+                
+            </div>
+            <div class="item">
+                <div class="logoandname">
+                    <div class="itemlogo"></div>
+                    <div class="itemname">
+                        <p>Nissan Juke</p>
+                    </div>
+                </div>
+                <div class="itemdescription">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium beatae hic nulla magnam delectus libero accusamus laborum! Dolores, veniam maiores! Totam, quisquam ducimus animi sequi dignissimos.</p>
+                </div>
+            </div>
+            <div class="learnmore">
+                <button onclick="location.href='pages/buy.html'">Check Out</button>
+
+            </div>
+        </header>
+
+        <!-- Popular Section -->
+        <div class="titles">
+            <p>Popular</p>
+        </div>
+        <header class="top">
+            <div class="gradiant">
+                
+            </div>
+            <div class="item">
+                <div class="logoandname">
+                    <div class="itemlogo"></div>
+                    <div class="itemname">
+                        <p>Nissan Juke</p>
+                    </div>
+                </div>
+                <div class="itemdescription">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium beatae hic nulla magnam delectus libero accusamus laborum! Dolores, veniam maiores! Totam, quisquam ducimus animi sequi dignissimos.</p>
+                </div>
+            </div>
+            <div class="learnmore">
+                <button onclick="location.href='pages/buy.html'">Check Out</button>
+            </div>
+        </header>
+
+        <!-- On Sale Section -->
+        <div class="titles">
+            <p>On Sale</p>
+        </div>
+
+
+        <header class="top">
+            <div class="gradiant">
+
+            </div>
+            <div class="item">
+                <div class="logoandname">
+                    <div class="itemlogo"></div>
+                    <div class="itemname">
+                        <p>Nissan Juke</p>
+                    </div>
+                </div>
+                <div class="itemdescription">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium beatae hic nulla magnam delectus libero accusamus laborum! Dolores, veniam maiores! Totam, quisquam ducimus animi sequi dignissimos.</p>
+                </div>
+            </div>
+            <div class="learnmore">
+                <button onclick="location.href='pages/buy.html'">Check Out</button>
+            </div>
+        </header>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h2>Prime Auto</h2>
+                    <p>Best place to buy and rent cars.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 id="contact">Contact Us</h3>
+                    <p>Email: <a href="mailto:contact@primeauto.com">contact@primeauto.com</a></p>
+                    <p>Phone: +259 213 237 23</p>
+                    <p>Address: 123 Car St, Auto City, CA 12345</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-media">
+                        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="images/telegram-icon.png" alt="Telegram"></a>
+                        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Prime Auto. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
